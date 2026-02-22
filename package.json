@@ -1,0 +1,52 @@
+{
+  "name": "putput",
+  "version": "0.0.1",
+  "description": "Dead-simple file uploads — get a CDN URL in 3 lines. $0 egress, 10 GB free, no signup required.",
+  "type": "module",
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "clean": "rm -rf dist",
+    "check": "tsc --noEmit"
+  },
+  "keywords": [
+    "putput",
+    "putput.io",
+    "file-upload",
+    "upload",
+    "cdn",
+    "file-hosting",
+    "r2",
+    "cloudflare",
+    "presigned-url",
+    "s3-alternative",
+    "blob-storage",
+    "file-storage",
+    "image-upload"
+  ],
+  "homepage": "https://putput.io",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/putput-io/sdk"
+  },
+  "bugs": {
+    "url": "https://github.com/putput-io/sdk/issues"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@putput/tsconfig": "workspace:*",
+    "typescript": "^5.5"
+  }
+}
